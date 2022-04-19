@@ -601,7 +601,7 @@ header nav .form i {
 
 @media (max-width: 767px) {
     .video .text {
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -815,6 +815,12 @@ header nav .form i {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+@media (max-width :767px) {
+    .our-skills .skills {
+        margin-top: 100px;
+    }
+}
+
 
 .our-skills .skills .prog-holder {
     margin-bottom: 40px;
@@ -946,10 +952,22 @@ header nav .form i {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .pricing .plans .plan {
+       border-bottom: 1px solid var(--main-color);;
+    }
+}
+
 .pricing .plans .plan .head {
     padding: 40px 20px;
     border-top: 1px solid var(--main-color);
     border-bottom: 1px solid var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .pricing .plans .plan .head {
+        border-top: none;
+    }
 }
 
 .pricing .plans .plan .head h3 {
@@ -983,12 +1001,19 @@ header nav .form i {
     border-bottom: 1px solid var(--main-color);
 }
 
+@media (max-width: 767px) {
+    .pricing .plans .plan ul {
+        border-bottom: none;
+    }
+}
+
+
 .pricing .plans .plan ul li {
     padding: 20px;
     position: relative;
 }
 
-.pricing .plans .plan ul li:not(:last-child)::after {
+.pricing .plans .plan ul li:not(:last-child):after {
     content: "";
     width: 140px;
     height: 1px;
@@ -997,6 +1022,19 @@ header nav .form i {
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .pricing .plans .plan ul li:after {
+        content: "";
+        width: 140px;
+        height: 1px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
 }
 
 .pricing .plans .plan .foot a {
